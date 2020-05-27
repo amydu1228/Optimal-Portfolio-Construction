@@ -26,7 +26,9 @@ A minimum variance portfolio indicates a well-diversified portfolio that consist
 
 ## Final Result:
 We should first determine our strategy on investment. There is always a risk return trade off. To be more specific, higher risk is associated with greater probability of higher return and lower risk with a greater probability of smaller return.
+
 Thus, compared maximum sharpe ratio portfolio with minimum-variance portfolio, we know that the weights allocation on each industry would have a huge difference.
+
 Under only long scenario, a maximize sharpe ratio portfolio can be formed with: 
 * Util     0.2625
 * Beer     0.2082
