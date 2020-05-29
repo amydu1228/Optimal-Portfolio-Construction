@@ -3,6 +3,16 @@
 ## Goal: 
 The goal for this project is to optimize industry portfolios through maximizing Sharpe ratio or minimizing variance. 
 
+## Data:
+Use pandas_datareader to collect financial data from Kenneth French data library. The 49 industries are Agric, Food, Soda, Beer, Smoke, Toys, Fun, Books, Hshld, Clths, Hlth, MedEq, Drugs, Chems, Rubbr, Txtls, BldMt, Cnstr, Steel, FabPr, Mach, ElcEq, Autos, Aero, Ships, Guns, Gold, Mines, Coal, Oil, Util, Telcm, PerSv, BusSv, Hardw, Softw, Chips, LabEq, Paper, Boxes, Trans, Whlsl, Rtail, Meals, Banks, Insur, RlEst, Fin, Other.
+
+Tools & Packages Required
+* Python
+* Numpy
+* Pandas
+* Matplotlib (ggplot)
+* Scipy
+
 ## Project Approach:
 There are four steps that in this project:
 
@@ -21,8 +31,14 @@ The Sharpe ratio of a portfolio (or security) is the ratio of the expected exces
 * Scenario 1: For Long Only
 * Scenario 2: Allow Short Selling
 
+To optimize the portfolio, I used Sequential Least Squares Programming(SLSQP) to find the maximum Sharpe ratio and then passed it to the function.
+
+I also visualized the weights for each industry using Matplotlib ggplot.
+
 ### Step 4: Portfolio Optimization Based on Minimum-Variance
 A minimum variance portfolio indicates a well-diversified portfolio that consists of individually risky assets, which are hedged when traded together, resulting in the lowest possible risk for the rate of expected return.
+
+To optimize the portfolio, I also used Sequential Least Squares Programming(SLSQP) to minimize variance and then passed it to the function.
 
 ## Final Result:
 We should first determine our strategy on investment. There is always a risk return trade off. To be more specific, higher risk is associated with greater probability of higher return and lower risk with a greater probability of smaller return.
